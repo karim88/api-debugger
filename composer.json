@@ -1,0 +1,29 @@
+{
+    "name": "lexuses/api-debugger",
+    "description": "Debug info in laravel api response",
+    "type": "library",
+    "keywords": ["laravel", "api", "debug", "debugger"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexey Khrulev",
+            "email": "lexuses@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lexuses\\ApiDebugger\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Lexuses\\ApiDebugger\\ApiDebuggerServiceProvider"
+            ]
+        }
+    }
+}
