@@ -1,10 +1,10 @@
-## Api debugger
+## Api debugger (forked from lexuses/api-debugger)
 
 ### Install
-`composer install lexuses/api-debugger`
+`composer install karim88/api-debugger`
 
 ### Usage
-For laravel below 5.5: add ```Lexuses\ApiDebugger\ApiDebuggerServiceProvider``` to your app.php
+For laravel below 5.5: add ```Karim88\ApiDebugger\ApiDebuggerServiceProvider``` to your app.php
 
 It's done!
 

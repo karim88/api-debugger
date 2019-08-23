@@ -1,5 +1,5 @@
 {
-    "name": "lexuses/api-debugger",
+    "name": "karim88/api-debugger",
     "description": "Debug info in laravel api response",
     "type": "library",
     "keywords": ["laravel", "api", "debug", "debugger"],
@@ -8,6 +8,10 @@
         {
             "name": "Alexey Khrulev",
             "email": "lexuses@gmail.com"
+        },
+        {
+            "name": "Karim Oulad Chalha",
+            "email": "ouladchalha.k@gmail.com"
         }
     ],
     "require": {
@@ -16,13 +20,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Lexuses\\ApiDebugger\\": "src"
+            "Karim88\\ApiDebugger\\": "src"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Lexuses\\ApiDebugger\\ApiDebuggerServiceProvider"
+                "Karim88\\ApiDebugger\\ApiDebuggerServiceProvider"
             ]
         }
     }

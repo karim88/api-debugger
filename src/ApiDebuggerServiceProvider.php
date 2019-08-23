@@ -1,6 +1,6 @@
 <?php
 
-namespace Lexuses\ApiDebugger;
+namespace Karim88\ApiDebugger;
 
 use Illuminate\Support\ServiceProvider;
 
