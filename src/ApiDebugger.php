@@ -105,7 +105,7 @@ class ApiDebugger {
             {
                 $sql = [
                     'total_queries' => $this->queries->count() > 4 ? $this->queries->count() - 4 : $this->queries->count(),
-                    'queries' => $this->queries->count() > 4 ? $this->queries->slice(4) : $this->queries,
+                    'queries' => $this->queries->count() > 4 ? $this->queries->slice(4)->values() : $this->queries,
                 ];
             }
             if (!$this->debug->isEmpty())
