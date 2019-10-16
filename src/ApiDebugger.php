@@ -30,10 +30,10 @@ class ApiDebugger {
      */
     public function __construct()
     {
-        $this->queries = new Collection();
-        $this->debug   = new Collection();
+        if (config('app.debug')) {
+            $this->queries = new Collection();
+            $this->debug   = new Collection();
 
-        if (env('APP_DEBUG')) {
             Event::listen('Illuminate\Foundation\Http\Events\RequestHandled', function ($event) {
                 $this->updateRequest($event->request, $event->response);
             });
