@@ -70,11 +70,12 @@ class ApiDebugger {
                 $attributes[$k] = date_format($attr, 'Y-m-d H:i:s');
         }
 
-        $query = vsprintf(str_replace(['%', '?'], ['%%', "'%s'"], $query), $attributes) . ';';
+        $query = addslashes($query) . ';';
 
         $this->queries->push([
             'query' => $query,
-            'time' 	=> $time,
+            'arrtributes' => $attributes,
+            'time'  => $time,
         ]);
     }
 
